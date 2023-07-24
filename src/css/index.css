@@ -10,7 +10,7 @@
 #sobre .parte {
     display: flex;
     align-items: center;
-    margin: 1% 5%;
+    margin: 2% 5%;
     gap: 2%;
 }
 #sobre .parte .circulo {
@@ -33,8 +33,9 @@
     font-size: 1.3em;
 }
 #sobre div .retangulo {
-    margin: 3% auto;
+    margin: 3% auto 0;
     text-align: center;
+    padding: 0 4%;
 }
 #temporadas, #musicas {
     margin: 8% auto auto;
