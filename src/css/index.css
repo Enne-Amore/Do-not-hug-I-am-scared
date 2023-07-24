@@ -120,10 +120,11 @@
     }
     #sobre .retangulo {
         margin: 0 5%;
-        padding: 5%;
+        padding: 2%;
     }
     #sobre div .retangulo {
         margin: 1% 5% 4%;
+        padding: 2%;
     }
     #temporadas .temporadas, #musicas .temporadas {
         display: flex;
