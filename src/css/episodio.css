@@ -50,8 +50,7 @@ body {
     margin: 1% 0;
     border-radius: 10em;
     transition-duration: .2s;
-    width: 4%;
-    max-width: 10%;
+    width: 5%;
     height: auto;
 }
 #episodio .voltar:hover {
@@ -85,7 +84,7 @@ body {
         margin: 5% auto;
     }
     #episodio .voltar {
-        width: 25%;
+        width: 20%;
         height: auto;
     }
 }
@@ -110,5 +109,22 @@ body {
     #episodio .voltar {
         width: 15%;
         height: auto;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    #episodio .nome {
+        margin-top: 3%;
+    }
+    #episodio .video {
+        margin: 1% auto;
+    }
+    #episodio .video-indisponivel {
+        width: 90%;
+        margin: 5% auto;
+    }
+    #episodio .voltar {
+        min-width: 8%;
+        max-width: 20%;
     }
 }
