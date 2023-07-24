@@ -81,7 +81,7 @@
         flex-direction: column;
     }
     #conteudo .parte {
-        margin: 10% auto;
+        margin: 12% auto 15% auto;
     }
     #sobre .parte .circulo {
         width: 50%;
@@ -92,10 +92,13 @@
         margin: 0 5%;
         padding: 5%;
     }
-    #temporadas .temporadas {
+    #sobre div .retangulo {
+        margin: 1% 5% 4%;
+    }
+    #temporadas .temporadas, #musicas .temporadas {
         display: flex;
         justify-content: center;
-        margin: 10% auto 15%;
+        margin: 10% 5% 15%;
     }
 }
 
@@ -107,7 +110,7 @@
         flex-direction: column;
     }
     #conteudo .parte {
-        margin: 10% auto;
+        margin: 10% auto 12% auto;
     }
     #sobre .parte .circulo {
         width: 50%;
@@ -118,9 +121,12 @@
         margin: 0 5%;
         padding: 5%;
     }
-    #temporadas .temporadas {
+    #sobre div .retangulo {
+        margin: 1% 5% 4%;
+    }
+    #temporadas .temporadas, #musicas .temporadas {
         display: flex;
         justify-content: center;
-        margin: 10% auto 15%;
+        margin: 10% 5% 15%;
     }
 }
