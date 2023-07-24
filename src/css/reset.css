@@ -152,7 +152,7 @@ header .nav {
     }
 }
 
-@media only screen and (min-width: 400px) and (max-width: 420px) {
+@media only screen and (min-width: 400px) and (max-width: 600px) {
     body {
         font-size: 1em;
     }
@@ -161,30 +161,7 @@ header .nav {
         height: 100%;
     }
     .nav ul {
-        gap: 5%;
-    }
-    .nav ul .ative {
-        width: 9em;
-    }
-    .nav ul .ative:hover {
-        width: 10em;
-    }
-    #conteudo .titulo {
-        font-size: 1.5em;
-        margin: 15% auto auto;
-    }
-}
-
-@media only screen and (min-width: 414px) and (max-width: 600px) {
-    body {
-        font-size: 1em;
-    }
-    header .logo, header .logo img {
-        width: 100%;
-        height: 100%;
-    }
-    .nav ul {
-        gap: 10%;
+        gap: auto;
     }
     .nav ul .ative {
         width: 9em;

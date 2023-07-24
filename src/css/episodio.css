@@ -52,6 +52,7 @@ body {
     transition-duration: .2s;
     width: 5%;
     height: auto;
+    overflow: hidden;
 }
 #episodio .voltar:hover {
     box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.267);
