@@ -1,0 +1,111 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'marionete';
+    src: url(../fontes/TrashToys02.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'puppet';
+    src: url(../fontes/cartoon_toy_turbo/Cartoon\ Toy\ Turbo\ Bold.otf) format(opentype);
+}
+
+body {
+    font: 2em 'marionete';
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    background-image: url(../imagens/fundo2.1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#episodio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#episodio .nome {
+    margin: 0.2em auto;
+}
+#episodio .video {
+    width: 60%;
+    height: 14.2em;
+    margin: auto;
+}
+#episodio .video-indisponivel {
+    width: 60%;
+    height: 6em;
+    margin: auto;
+    background-color: white;
+    color: #730202;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'puppet';
+    font-size: 2em;
+}
+#episodio .voltar {
+    margin: 1% 0;
+    border-radius: 10em;
+    transition-duration: .2s;
+}
+#episodio .voltar:hover {
+    box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.267);
+    transition-duration: .2s;
+}
+#episodio .voltar:active {
+    box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.473);
+    transition-duration: .1s;
+}
+
+/* A responsividade do site */
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-attachment: fixed;
+        background-position: center;
+    }
+    #episodio .nome {
+        margin-top: 5%;
+        font-size: 1.3em;
+    }
+    #episodio .video {
+        width: 90%;
+        height: 7em;
+        margin: 5% auto;
+    }
+    #episodio .video-indisponivel {
+        width: 90%;
+        height: 4em;
+        margin: 5% auto;
+    }
+    #episodio .voltar {
+        width: 25%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    body {
+        background-attachment: fixed;
+        background-position: center;
+    }
+    #episodio .nome {
+        margin-top: 5%;
+    }
+    #episodio .video {
+        width: 90%;
+        height: 15em;
+        margin: 5% auto;
+    }
+    #episodio .video-indisponivel {
+        width: 90%;
+        margin: 5% auto;
+    }
+    #episodio .voltar {
+        width: 15%;
+        height: auto;
+    }
+}

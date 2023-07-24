@@ -1,0 +1,84 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'puppet';
+    src: url(../fontes/cartoon_toy_turbo/Cartoon\ Toy\ Turbo\ Bold.otf) format(opentype);
+}
+
+
+/* O conteúdo do site de episódios */
+
+#episodios .episodio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5% auto;
+}
+
+#episodios .episodio .capa {
+    width: 100%;
+    height: auto;
+}
+
+#episodios .episodio .ep {
+    background-color: #D96277;
+    color: white;
+    border-radius: 2em 2em 0 0;
+    width: auto;
+    font-family: 'puppet';
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.158);
+}
+
+#episodios .episodio .ep h2 {
+    margin: 1%;
+    font-weight: bolder;
+}
+
+#episodios .episodio .opcoes {
+    display: flex;
+    gap: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#episodios .episodio .opcoes a h3 {
+    background-color: #D96277;
+    color: white;
+    width: max-content;
+    margin: 0;
+    padding: 1em 1em;
+    border-radius: 0 0 5em 5em;
+    transition-duration: .4s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.158);
+}
+#episodios .episodio .opcoes a h3:hover {
+    background-color: #91D9D2;
+    color: white;
+    transition-duration: .4s;
+}
+#episodios .episodio .opcoes a h3:active {
+    background-color: white;
+    color: #91D9D2;
+    transition-duration: .1s;
+}
+/* A responsividade do site */
+
+@media only screen and (max-width: 600px) {
+    #episodios .episodio {
+        margin: 13% auto;
+    }
+    #episodios .episodio .ep {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    #episodios .episodio {
+        margin: 10% auto;
+    }
+}
