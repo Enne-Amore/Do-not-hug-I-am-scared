@@ -70,7 +70,7 @@
 
 @media only screen and (max-width: 600px) {
     #episodios .episodio {
-        margin: 13% auto;
+        margin: 13% 5%;
     }
     #episodios .episodio .ep {
         font-size: 1.5em;
@@ -79,6 +79,6 @@
 
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
     #episodios .episodio {
-        margin: 10% auto;
+        margin: 10% 5%;
     }
 }
