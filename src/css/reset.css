@@ -138,7 +138,8 @@ header .nav {
         height: 100%;
     }
     .nav ul {
-        gap: 3%;
+        gap: auto;
+        width: 15%;
     }
     .nav ul .ative {
         width: 9em;
@@ -161,7 +162,8 @@ header .nav {
         height: 100%;
     }
     .nav ul {
-        gap: 5%;
+        gap: auto;
+        width: 25%;
     }
     .nav ul .ative {
         width: 9em;
