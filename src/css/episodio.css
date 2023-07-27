@@ -10,6 +10,8 @@
     src: url(../fontes/cartoon_toy_turbo/Cartoon\ Toy\ Turbo\ Bold.otf) format(opentype);
 }
 
+/* A mente das páginas */
+
 body {
     font: 2em 'marionete';
     max-width: 100%;
@@ -20,6 +22,8 @@ body {
     background-size: cover;
     color: white;
 }
+
+/* O vídeo apresentado para cada página */
 
 #episodio {
     display: flex;
@@ -46,6 +50,9 @@ body {
     font-family: 'puppet';
     font-size: 2em;
 }
+
+/* O botão exclusivo de voltar */
+
 footer .voltar {
     margin: 1% 0;
     border-radius: 10em;
