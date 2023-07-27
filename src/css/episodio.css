@@ -46,7 +46,7 @@ body {
     font-family: 'puppet';
     font-size: 2em;
 }
-#episodio .voltar {
+footer .voltar {
     margin: 1% 0;
     border-radius: 10em;
     transition-duration: .2s;
@@ -54,11 +54,11 @@ body {
     height: auto;
     overflow: hidden;
 }
-#episodio .voltar:hover {
+footer .voltar:hover {
     box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.267);
     transition-duration: .2s;
 }
-#episodio .voltar:active {
+footer .voltar:active {
     box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.473);
     transition-duration: .1s;
 }
@@ -84,7 +84,7 @@ body {
         height: 4em;
         margin: 5% auto;
     }
-    #episodio .voltar {
+    footer .voltar {
         width: 20%;
         height: auto;
     }
@@ -107,7 +107,7 @@ body {
         width: 90%;
         margin: 5% auto;
     }
-    #episodio .voltar {
+    footer .voltar {
         width: 15%;
         height: auto;
     }
@@ -124,7 +124,7 @@ body {
         width: 90%;
         margin: 5% auto;
     }
-    #episodio .voltar {
+    footer .voltar {
         min-width: 8%;
         max-width: 20%;
     }
