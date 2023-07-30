@@ -147,6 +147,9 @@ header .nav {
     .nav ul .ative:hover {
         width: 10em;
     }
+    #conteudo {
+        font-size: 1.4em;
+    }
     #conteudo .titulo {
         font-size: 1.5em;
         margin: 15% auto auto;
@@ -170,6 +173,9 @@ header .nav {
     }
     .nav ul .ative:hover {
         width: 10em;
+    }
+    #conteudo {
+        font-size: 1.4em;
     }
     #conteudo .titulo {
         font-size: 1.5em;
@@ -195,6 +201,9 @@ header .nav {
     .nav ul .ative:hover {
         width: 10em;
     }
+    #conteudo {
+        font-size: 1.5em;
+    }
     #conteudo .titulo {
         font-size: 1.5em;
         margin: 15% auto auto;
@@ -218,6 +227,9 @@ header .nav {
     }
     .nav ul .ative:hover {
         width: 10em;
+    }
+    #conteudo {
+        font-size: 1.2em;
     }
     #conteudo .titulo {
         font-size: 1.5em;
@@ -247,6 +259,9 @@ header .nav {
     .nav ul .ative:hover {
         width: 10em;
     }
+    #conteudo {
+        font-size: 1.2em;
+    }
     #conteudo .titulo {
         font-size: 1.5em;
         margin: 15% auto auto;
@@ -273,6 +288,9 @@ header .nav {
     .nav ul .ative:hover {
         width: 10em;
     }
+    #conteudo {
+        font-size: 1.3em;
+    }
     #conteudo .titulo {
         font-size: 1.5em;
         margin: 15% auto auto;
@@ -292,6 +310,9 @@ header .nav {
     }
     .nav ul .ative:hover {
         width: 18em;
+    }
+    #conteudo {
+        font-size: 1.2em;
     }
     #conteudo .titulo {
         margin: 10% auto auto;
