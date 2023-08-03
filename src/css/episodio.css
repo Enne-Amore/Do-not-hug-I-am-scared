@@ -107,7 +107,7 @@ footer .voltar:active {
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
     body {
         background-attachment: fixed;
         background-position: center;
@@ -116,8 +116,54 @@ footer .voltar:active {
         margin-top: 5%;
     }
     #episodio .video {
-        padding: 8em;
+        padding: 9.2em;
         padding-bottom: 5%;
+        margin: 5% auto;
+    }
+    #episodio .video-indisponivel {
+        width: 90%;
+        margin: 5% auto;
+    }
+    footer .voltar {
+        width: 15%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-attachment: fixed;
+        background-position: center;
+    }
+    #episodio .nome {
+        margin-top: 5%;
+    }
+    #episodio .video {
+        padding: 11.5em;
+        padding-bottom: 6%;
+        margin: 5% auto;
+    }
+    #episodio .video-indisponivel {
+        width: 90%;
+        margin: 5% auto;
+    }
+    footer .voltar {
+        width: 15%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-attachment: fixed;
+        background-position: center;
+    }
+    #episodio .nome {
+        margin-top: 5%;
+    }
+    #episodio .video {
+        padding: 15em;
+        padding-bottom: 6%;
         margin: 5% auto;
     }
     #episodio .video-indisponivel {
