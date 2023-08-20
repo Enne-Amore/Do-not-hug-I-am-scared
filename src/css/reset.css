@@ -6,7 +6,10 @@
 }
 
 /* A mente do site */
-
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     font: 1.5em Arial, sans-serif;
     margin: 0;
@@ -46,18 +49,18 @@ header .nav {
     justify-content: center;
     gap: 16%;
     margin: auto;
-    padding: 0;
 }
 .nav ul a {
     text-decoration: none;
     color: white;
+    padding: 5% 0;
     transition-duration: .6s;
     border-radius: 1.5em 1.5em 0 0;
 }
 .nav ul a:hover {
     background-color: white;
     color: #BF7839;
-    padding: 0 5%;
+    padding: 5%;
     transition-duration: .6s;
 }
 .nav ul a:active {
@@ -111,8 +114,25 @@ header .nav {
     text-align: center;
     background-color: #0D0D0D;
     color: white;
-    padding: 0.1%;
+    padding: 2%;
     font-style: italic;
+}
+#rodape p {
+    font-size: 1.4em;
+}
+#rodape .creditos {
+    display: flex;
+    justify-content: center;
+    margin: 3% 20% 0;
+    gap: 5%;
+}
+#rodape .creditos .lista {
+    list-style: none;
+    columns: 2;
+    text-align: start;
+}
+#rodape .creditos .lista li {
+    margin-bottom: 4%;
 }
 #rodape a {
     color: #91D9D2;
@@ -155,6 +175,12 @@ header .nav {
         font-size: 1.5em;
         margin: 15% auto auto;
     }
+    #rodape {
+        padding: 5% 0;
+    }
+    #rodape .creditos {
+        margin: 5% 5% 0;
+    }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 460px) {
@@ -181,6 +207,12 @@ header .nav {
     #conteudo .titulo {
         font-size: 1.5em;
         margin: 15% auto auto;
+    }
+    #rodape {
+        padding: 5% 0;
+    }
+    #rodape .creditos {
+        margin: 5% 5% 0;
     }
 }
 
@@ -209,6 +241,12 @@ header .nav {
         font-size: 1.5em;
         margin: 15% auto auto;
     }
+    #rodape {
+        padding: 5% 0;
+    }
+    #rodape .creditos {
+        margin: 5% 5% 0;
+    }
 }
 
 @media only screen and (min-width: 530px) and (max-width: 600px) {
@@ -235,6 +273,12 @@ header .nav {
     #conteudo .titulo {
         font-size: 1.5em;
         margin: 15% auto auto;
+    }
+    #rodape {
+        padding: 5% 0;
+    }
+    #rodape .creditos {
+        margin: 5% 5% 0;
     }
 }
 
@@ -267,6 +311,12 @@ header .nav {
         font-size: 1.5em;
         margin: 15% auto auto;
     }
+    #rodape {
+        padding: 5% 0;
+    }
+    #rodape .creditos {
+        margin: 5% 5% 0;
+    }
 }
 
 @media screen and (min-width: 700px) and (max-width: 800px) {
@@ -296,6 +346,12 @@ header .nav {
         font-size: 1.5em;
         margin: 15% auto auto;
     }
+    #rodape {
+        padding: 5% 0;
+    }
+    #rodape .creditos {
+        margin: 5% 10% 0;
+    }
 }
 
 @media screen and (min-width: 800px) and (max-width: 992px) {
@@ -318,6 +374,12 @@ header .nav {
     #conteudo .titulo {
         margin: 10% auto auto;
     }
+    #rodape {
+        padding: 5% 0;
+    }
+    #rodape .creditos {
+        margin: 5% 10% 0;
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -339,5 +401,11 @@ header .nav {
     }
     #conteudo .titulo {
         margin: 10% auto auto;
+    }
+    #rodape {
+        padding: 5% 0;
+    }
+    #rodape .creditos {
+        margin: 5% 6% 0;
     }
 }

@@ -10,18 +10,19 @@
 #sobre .parte {
     display: flex;
     align-items: center;
-    margin: 2% 5%;
+    justify-content: center;
     gap: 2%;
+    margin: 2% 5%;
 }
-#sobre .parte .circulo {
-    width: 30%;
-    height: auto;
+#sobre .parte .circulo img {
+    width: 100%;
+    height: 100%;
     border-radius: 10em;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.267);
 }
 #sobre .retangulo {
-    width: auto;
-    height: auto;
+    width: fit-content;
+    height: fit-content;
     border-radius: 1em;
     background-color: #D96277;
     color: white;
@@ -32,10 +33,10 @@
 #sobre .parte .retangulo {
     font-size: 1.3em;
 }
-#sobre div .retangulo {
+#sobre .parte.meio .retangulo {
     margin: 3% auto 0;
     text-align: center;
-    padding: 0 4%;
+    padding: 2% 3%;
 }
 #temporadas, #musicas {
     margin: 8% auto auto;
@@ -71,6 +72,9 @@
     color: #D96277;
     transition-duration: .1s;
 }
+#temporadas .temporadas .temporada h2, #musicas .temporadas .temporada h2 {
+    padding: 4% 0;
+}
 
 /* A responsividade do site */
 
@@ -83,23 +87,30 @@
     }
     #conteudo .parte {
         margin: 12% auto 15% auto;
+        gap: 0;
     }
     #sobre .parte .circulo {
-        width: 50%;
-        height: auto;
+        display: flex;
+        margin: 0 18%;
+    }
+    #sobre .parte .circulo img {
         border-radius: 10em 10em 0 0;
     }
     #sobre .retangulo {
         margin: 0 5%;
         padding: 5%;
     }
-    #sobre div .retangulo {
+    #sobre .parte.meio .retangulo {
         margin: 1% 5% 4%;
+        padding: 5%;
     }
     #temporadas .temporadas, #musicas .temporadas {
         display: flex;
         justify-content: center;
         margin: 10% 5% 15%;
+    }
+    #temporadas .temporadas .temporada h2, #musicas .temporadas .temporada h2 {
+        padding: 8% 0;
     }
 }
 
@@ -114,21 +125,26 @@
         margin: 10% auto 12% auto;
     }
     #sobre .parte .circulo {
-        width: 50%;
-        height: auto;
+        display: flex;
+        margin: 0 18%;
+    }
+    #sobre .parte .circulo img {
         border-radius: 10em 10em 0 0;
     }
     #sobre .retangulo {
         margin: 0 5%;
-        padding: 2%;
+        padding: 4%;
     }
-    #sobre div .retangulo {
+    #sobre .parte.meio .retangulo {
         margin: 1% 5% 4%;
-        padding: 2%;
+        padding: 4%;
     }
     #temporadas .temporadas, #musicas .temporadas {
         display: flex;
         justify-content: center;
         margin: 10% 5% 15%;
+    }
+    #temporadas .temporadas .temporada h2, #musicas .temporadas .temporada h2 {
+        padding: 7% 0;
     }
 }
