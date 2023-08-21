@@ -17,7 +17,7 @@ body {
     max-width: 100%;
     height: auto;
     text-align: center;
-    background-image: url(../imagens/fundo2.1.jpeg);
+    background-image: url(../imagens/fundo2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -89,10 +89,10 @@ footer .voltar:active {
     }
     #episodio .nome {
         margin-top: 5%;
-        font-size: 1.3em;
+        font-size: 10.5vw;
     }
     #episodio .video {
-        padding: 5em;
+        padding: 44vw;
         padding-bottom: 5%;
         margin: 5% auto;
     }
@@ -116,7 +116,7 @@ footer .voltar:active {
         margin-top: 5%;
     }
     #episodio .video {
-        padding: 9.2em;
+        padding: 46vw;
         padding-bottom: 5%;
         margin: 5% auto;
     }
@@ -139,7 +139,7 @@ footer .voltar:active {
         margin-top: 5%;
     }
     #episodio .video {
-        padding: 11.5em;
+        padding: 46vw;
         padding-bottom: 6%;
         margin: 5% auto;
     }
@@ -162,13 +162,13 @@ footer .voltar:active {
         margin-top: 5%;
     }
     #episodio .video {
-        padding: 15em;
+        padding: 48vw;
         padding-bottom: 6%;
         margin: 5% auto;
     }
     #episodio .video-indisponivel {
         width: 90%;
-        margin: 5% auto;
+        margin: 5%;
     }
     footer .voltar {
         width: 15%;
