@@ -50,6 +50,7 @@ a {
 #cabecalho .nav ul a {
     text-decoration: none;
     font-weight: bolder;
+    font-size: 1.2em;
     color: white;
     padding: 3% 0;
     transition-duration: .6s;
@@ -187,7 +188,7 @@ a {
         margin: auto;
     }
     #cabecalho .nav ul a, #cabecalho .nav ul .ative {
-        font-size: 1em;
+        font-size: 1.15em;
         padding: 4% 0;
     }
     #cabecalho .nav ul a:hover {
