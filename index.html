@@ -6,22 +6,33 @@
     <title>Não me abrace, estou assustado</title>
     <link rel="shortcut icon" href="src/imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="src/css/index.css">
-    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/padrao.css">
+    <script src="src/js/topo.js" defer></script>
 </head>
 <body>
-    <header>
+
+    <header id="cabecalho">
+
         <div class="logo">
             <img src="src/imagens/logo.png" alt="Logo da série: Não me abrace, estou assustado">
         </div>
+
         <nav class="nav">
             <ul>
-                <a href="#sobre"><li><h3>Sobre</h3></li></a>
-                <a href="#temporadas"><li><h3>Temporadas</h3></li></a>
-                <a href="#musicas"><li><h3>Músicas</h3></li></a>
-                <a href="#rodape"><li><h3>Créditos</h3></li></a>
+
+                <a href="#sobre" aria-label="Sobre o que é esta a websérie">Sobre</a>
+
+                <a href="#temporadas" aria-label="As temporadas da websérie">Temporadas</a>
+
+                <a href="#musicas" aria-label="As músicas vindas da websérie">Músicas</a>
+
+                <a href="#rodape" aria-label="Os créditos do site">Créditos</a>
+
             </ul>
         </nav>
+
     </header>
+
     <main id="conteudo">
         <section id="sobre">
             <div class="titulo">
@@ -56,13 +67,17 @@
             </div>
             <article class="temporadas">
                 <a href="src/view/temporada-1.html" rel="next" class="temporada">
-                    <img src="src/imagens/temporada1.jpeg" alt="Temporada 1">
+                    <figure class="capa">
+                        <img src="src/imagens/temporada1.jpeg" alt="Temporada 1">
+                    </figure>
                     <h2>Temporada 1</h2>
                 </a>
             </article>
             <article class="temporadas">
                 <a href="src/view/temporada-2.html" rel="next" class="temporada">
-                    <img src="src/imagens/temporada2.png" alt="Temporada 2">
+                    <figure class="capa">
+                        <img src="src/imagens/temporada2.png" alt="Temporada 2">
+                    </figure>
                     <h2>Temporada 2</h2>
                 </a>
             </article>
@@ -73,40 +88,75 @@
             </div>
             <article class="temporadas">
                 <a href="src/view/musicas.html" rel="next" class="temporada">
-                    <img src="src/imagens/musicas.png" alt="Músicas das temporadas 1 e 2">
+                    <figure class="capa">
+                        <img src="src/imagens/musicas.png" alt="Músicas das temporadas 1 e 2">
+                    </figure>
                     <h2>Temporadas 1 e 2</h2>
                 </a>
             </article>
         </section>
+
+        <div id="topo">
+            &#10569;
+        </div>
+
     </main>
+
     <footer id="rodape">
+
         <p>
-            Site criado por <a href="https://github.com/Enne-Amore" rel="external" target="_blank">Enne Jim Pessoa</a>
+            Site criado por <a href="https://github.com/Enne-Amore" aria-label="Meu perfil do GitHub" rel="external" target="_blank">Enne Jim Pessoa</a>
         </p>
+
         <hr>
+
         <section class="creditos">
-            <h4>Créditos:</h4>
+
+            <h3>Créditos:</h3>
+
             <ul class="lista">
+
                 <li>
-                    <a href="http://cinegnose.blogspot.com/2016/01/curta-da-semana-dont-hug-me-im-scared-o.html" rel="external" target="_blank">Logo do site</a>
+                    <a href="http://cinegnose.blogspot.com/2016/01/curta-da-semana-dont-hug-me-im-scared-o.html" aria-label="Autoria da logo do site" rel="external" target="_blank">
+                        Logo do site
+                    </a>
                 </li>
+
                 <li>
-                    <a href="https://www.youtube.com/@donthugmeimscared" rel="external" target="_blank">Canal Oficial</a>
+                    <a href="https://www.youtube.com/@donthugmeimscared" aria-label="Autoria dos episódios no Youtube" rel="external" target="_blank">
+                        Canal Oficial
+                    </a>
                 </li>
+
                 <li>
-                    <a href="https://www.deviantart.com/fnafnate/art/Don-t-hug-me-I-m-scared-wallpaper-797185474" rel="external" target="_blank">Imagem representante da 1ª temporada</a>
+                    <a href="https://www.deviantart.com/fnafnate/art/Don-t-hug-me-I-m-scared-wallpaper-797185474" aria-label="Autoria da imagem que pode representar a 1ª temporada" rel="external" target="_blank">
+                        Imagem representante da 1ª temporada
+                    </a>
                 </li>
+
                 <li>
-                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.reddit.com%2Fr%2FDHMIS%2Fcomments%2Fepcg5i%2Fthe_dhmis_trio_ssbukfad2_style_icon%2F&psig=AOvVaw1P7mhrO_NPG_iIZdeQV2xH&ust=1692712985849000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKDskLL17YADFQAAAAAdAAAAABAE" rel="external" target="_blank">Ícone do site</a>
+                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.reddit.com%2Fr%2FDHMIS%2Fcomments%2Fepcg5i%2Fthe_dhmis_trio_ssbukfad2_style_icon%2F&psig=AOvVaw1P7mhrO_NPG_iIZdeQV2xH&ust=1692712985849000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKDskLL17YADFQAAAAAdAAAAABAE" aria-label="Autoria do ícone do site" rel="external" target="_blank">
+                        Ícone do site
+                    </a>
                 </li>
+
                 <li>
-                    <a href="https://www.deviantart.com/fnafnate/art/Don-t-hug-me-I-m-scared-wallpaper-797185474" rel="external" target="_blank">Imagem de fundo</a>
+                    <a href="https://www.deviantart.com/fnafnate/art/Don-t-hug-me-I-m-scared-wallpaper-797185474" aria-label="Autoria da imagem de fundo" rel="external" target="_blank">
+                        Imagem de fundo
+                    </a>
                 </li>
+
                 <li>
-                    <a href="https://br.pinterest.com" rel="external" target="_blank">Imagens de figura dos textos</a>
+                    <a href="https://br.pinterest.com" aria-label="Autoria das imagens como figuras dos textos da primeira página" rel="external" target="_blank">
+                        Imagens de figura dos textos
+                    </a>
                 </li>
+
             </ul>
+
         </section>
+
     </footer>
+
 </body>
 </html>

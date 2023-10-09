@@ -1,0 +1,233 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'marionete';
+    src: url(../fontes/TrashToys02.ttf) format(truetype);
+}
+
+/* A mente do site */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 1.8vw Arial, sans-serif;
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+    text-align: justify;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+
+/* O corpo do site */
+
+#cabecalho {
+    background-color: #0D0D0D;
+    box-shadow: 0px 0px 10px 5px #0d0d0d5e;
+    position: relative;
+}
+
+#cabecalho .logo, #cabecalho .logo img {
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 3em 3em;
+    margin: auto auto 0.6em;
+    width: 80%;
+    height: 100%;
+}
+
+#cabecalho .nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto 15%;
+}
+#cabecalho .nav ul a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    padding: 3% 0;
+    transition-duration: .6s;
+    border-radius: 1.5em 1.5em 0 0;
+}
+#cabecalho .nav ul a:hover {
+    background-color: white;
+    color: #BF7839;
+    padding: 3% 5%;
+    transition-duration: .6s;
+}
+#cabecalho .nav ul a:active {
+    background-color: #BF7839;
+    color: white;
+    transition-duration: .1s;
+}
+
+#cabecalho .nav ul .ative {
+    background-color: #BF7839;
+    color: white;
+    width: max-content;
+    padding: 3% 2%;
+}
+#cabecalho .nav ul .ative:hover {
+    background-color: white;
+    color: #BF7839;
+}
+#cabecalho .nav ul .ative:active {
+    background-color: #BF7839;
+    color: white;
+}
+
+/* O conteúdo do site */
+
+#conteudo {
+    background-image: url(../imagens/fundo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    padding: 1%;
+}
+
+#conteudo .titulo {
+    width: max-content;
+    height: auto;
+    background-color: #91D9D2;
+    border-radius: 1em;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'marionete';
+    color: #730202;
+    padding: 0 1em;
+    margin: 4% auto;
+}
+
+#conteudo #topo {
+    position: fixed;
+    right: 2%;
+    bottom: 6%;
+    background-color: #D96277;
+    color: white;
+    border-radius: 50%;
+    padding: 0.5% 2%;
+    font-size: 2.5em;
+    cursor: pointer;
+    transition-duration: .4s;
+}
+#conteudo #topo:hover {
+    background-color: #91D9D2;
+}
+#conteudo #topo:active {
+    background-color: white;
+    color: #91D9D2;
+}
+
+/* O rodapé do site */
+
+#rodape {
+    text-align: center;
+    background-color: #0D0D0D;
+    color: white;
+    padding: 2%;
+    font-style: italic;
+}
+
+#rodape p {
+    font-size: 1.4em;
+}
+
+#rodape hr {
+    margin-top: 0.9em;
+}
+
+#rodape .creditos {
+    display: flex;
+    justify-content: center;
+    margin: 2% 20% 1%;
+    gap: 5%;
+}
+#rodape .creditos .lista {
+    list-style: none;
+    columns: 2;
+    text-align: start;
+}
+#rodape .creditos .lista li {
+    margin-bottom: 6%;
+}
+
+#rodape a {
+    color: #91D9D2;
+    text-decoration: none;
+    transition-duration: .6s;
+}
+#rodape a:hover {
+    color: #D96277;
+    transition-duration: .6s;
+}
+#rodape a:active {
+    color: #BF7839;
+    transition-duration: .1s;
+}
+
+/* A responsividade do site */
+
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 4vw;
+    }
+
+    #cabecalho .logo, #cabecalho .logo img {
+        width: 100%;
+        height: 100%;
+    }
+    #cabecalho .nav ul {
+        margin: auto;
+    }
+    #cabecalho .nav ul a, #cabecalho .nav ul .ative {
+        font-size: 1em;
+        padding: 4% 0;
+    }
+    #cabecalho .nav ul a:hover {
+        padding: 4%;
+    }
+    #cabecalho .nav ul .ative {
+        padding: 4% 3%;
+    }
+    #cabecalho .nav ul .ative:hover {
+        padding: 4% 7%;
+    }
+    
+    #conteudo {
+        font-size: 1.1em;
+        background-position: left top;
+    }
+    #conteudo .titulo {
+        font-size: 1.5em;
+        margin: 12% auto auto;
+    }
+    #conteudo #topo {
+        right: 6%;
+        padding: 1% 6%;
+        font-size: 3.5em;
+    }
+
+    #rodape {
+        padding: 5% 0;
+        font-size: 0.95em;
+    }
+    #rodape hr {
+        margin: 0.9em 5% auto;
+    }
+    #rodape .creditos {
+        margin: 5% 15% 0;
+    }
+    #rodape .creditos .lista {
+        columns: 1;
+    }
+    #rodape .creditos .lista li {
+        margin-bottom: 10%;
+    }
+}

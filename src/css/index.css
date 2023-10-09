@@ -46,10 +46,17 @@
     justify-content: center;
     margin: 5% auto;
 }
-#temporadas .temporadas a img, #musicas .temporadas a img {
+#temporadas .temporadas .temporada .capa, #musicas .temporadas .temporada .capa {
+    overflow: hidden;
+}
+#temporadas .temporadas .temporada .capa img, #musicas .temporadas .temporada .capa img {
     width: 100%;
     height: 100%;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.267);
+    transition: .6s ease-out;
+}
+#temporadas .temporadas .temporada:hover img, #musicas .temporadas .temporada:hover img {
+    transform: scale(1.1);
 }
 #temporadas .temporadas .temporada, #musicas .temporadas .temporada {
     display: flex;
@@ -65,7 +72,6 @@
     background-color: #D96277;
     color: white;
     box-shadow: 0px 0px 10px 1px #0d0d0d5e;
-    transition-duration: .4s;
 }
 #temporadas .temporadas .temporada:active, #musicas .temporadas .temporada:active {
     background-color: white;
