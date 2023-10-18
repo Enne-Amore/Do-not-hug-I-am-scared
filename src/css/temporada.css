@@ -12,12 +12,20 @@
     text-align: center;
 }
 
+#episodios #dupla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 10%;
+    gap: 5vw;
+}
+
 #episodios .episodio {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5% auto;
+    margin: 1% auto 5%;
 }
 
 #episodios .episodio .capa {
@@ -31,6 +39,10 @@
 }
 #episodios .episodio:hover img {
     transform: scale(1.1);
+}
+#episodios .ep:active ~ .opcoes a h3 {
+    background-color: #91D9D2;
+    transition-duration: .2s;
 }
 
 #episodios .episodio .ep {
@@ -83,8 +95,16 @@
 /* A responsividade do site */
 
 @media only screen and (max-width: 600px) {
+    #episodios #dupla {
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
     #episodios .episodio {
-        margin: 10% 5% 13%;
+        margin: 10% 5% 5%;
+    }
+    #episodios #dupla:last-child .episodio:last-child {
+        margin-bottom: 12%;
     }
     #episodios .episodio .ep {
         font-size: 1.5em;
@@ -92,7 +112,15 @@
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
+    #episodios #dupla {
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
     #episodios .episodio {
         margin: 8% 5% 10%;
+    }
+    #episodios #dupla:last-child .episodio:last-child {
+        margin-bottom: 14%;
     }
 }
