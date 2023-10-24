@@ -12,7 +12,7 @@
     text-align: center;
 }
 
-#episodios #dupla {
+#episodios .flex-row-desktop {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,13 +34,13 @@
 #episodios .episodio .capa img {
     width: 100%;
     height: 100%;
-    margin-bottom: -2%;
+    margin-bottom: -3%;
     transition: .5s ease-out;
 }
 #episodios .episodio:hover img {
     transform: scale(1.1);
 }
-#episodios .ep:active ~ .opcoes a h3 {
+#episodios .ep:active ~ .opcoes a {
     background-color: #91D9D2;
     transition-duration: .2s;
 }
@@ -49,6 +49,7 @@
     position: relative;
     background-color: #D96277;
     color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.158);
     border-radius: 2em 2em 0 0;
     width: auto;
     font-family: 'puppet';
@@ -56,7 +57,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.158);
 }
 
 #episodios .episodio .ep h2 {
@@ -72,22 +72,24 @@
     align-items: center;
 }
 
-#episodios .episodio .opcoes a h3 {
+#episodios .episodio .opcoes a {
     background-color: #D96277;
     color: white;
     width: max-content;
+    font-size: 1.2em;
+    font-weight: bolder;
     margin: 0;
     padding: 1em 1em;
     border-radius: 0 0 5em 5em;
     transition-duration: .4s;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.158);
 }
-#episodios .episodio .opcoes a h3:hover {
+#episodios .episodio .opcoes a:hover {
     background-color: #91D9D2;
     color: white;
     transition-duration: .4s;
 }
-#episodios .episodio .opcoes a h3:active {
+#episodios .episodio .opcoes a:active {
     background-color: white;
     color: #91D9D2;
     transition-duration: .1s;
@@ -95,7 +97,7 @@
 /* A responsividade do site */
 
 @media only screen and (max-width: 600px) {
-    #episodios #dupla {
+    #episodios .flex-row-desktop {
         flex-direction: column;
         margin: 0;
         gap: 0;
@@ -103,7 +105,7 @@
     #episodios .episodio {
         margin: 10% 5% 5%;
     }
-    #episodios #dupla:last-child .episodio:last-child {
+    #episodios .flex-row-desktop:last-child .episodio:last-child {
         margin-bottom: 12%;
     }
     #episodios .episodio .ep {
@@ -112,7 +114,7 @@
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
-    #episodios #dupla {
+    #episodios .flex-row-desktop {
         flex-direction: column;
         margin: 0;
         gap: 0;
@@ -120,7 +122,7 @@
     #episodios .episodio {
         margin: 8% 5% 10%;
     }
-    #episodios #dupla:last-child .episodio:last-child {
+    #episodios .flex-row-desktop:last-child .episodio:last-child {
         margin-bottom: 14%;
     }
 }

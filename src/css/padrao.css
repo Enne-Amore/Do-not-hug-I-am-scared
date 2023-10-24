@@ -97,11 +97,12 @@ a {
     width: max-content;
     height: auto;
     background-color: #91D9D2;
+    color: #730202;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.158);
     border-radius: 1em;
     font-size: 2em;
     text-align: center;
     font-family: 'marionete';
-    color: #730202;
     padding: 0.15em 1em;
     margin: 4% auto;
 }

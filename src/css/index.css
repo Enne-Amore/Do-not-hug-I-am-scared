@@ -38,13 +38,22 @@
     text-align: center;
     padding: 2% 3%;
 }
+
+#temporadas .flex-row-desktop {
+    display: flex;
+    margin: auto 5%;
+    gap: 5vw;
+}
 #temporadas, #musicas {
     margin: 8% auto auto;
+}
+#musicas {
+    margin-bottom: 5%;
 }
 #temporadas .temporadas, #musicas .temporadas {
     display: flex;
     justify-content: center;
-    margin: 5% auto;
+    margin: 1% auto;
 }
 #temporadas .temporadas .temporada .capa, #musicas .temporadas .temporada .capa {
     overflow: hidden;
@@ -65,6 +74,7 @@
     text-decoration: none;
     background-color: #91D9D2;
     color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.158);
     border-radius: 0 0 5em 5em;
     transition-duration: .4s;
 }
@@ -76,10 +86,13 @@
 #temporadas .temporadas .temporada:active, #musicas .temporadas .temporada:active {
     background-color: white;
     color: #D96277;
-    transition-duration: .1s;
+    transition-duration: .2s;
 }
-#temporadas .temporadas .temporada h2, #musicas .temporadas .temporada h2 {
-    padding: 4% 0;
+#temporadas .temporadas .temporada h2 {
+    padding: 7%;
+}
+#musicas .temporadas .temporada h2 {
+    padding: 4%;
 }
 
 /* A responsividade do site */
@@ -110,13 +123,22 @@
         margin: 1% 5% 4%;
         padding: 5%;
     }
+
+    #temporadas .flex-row-desktop {
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+    #musicas {
+        margin-bottom: 12%;
+    }
     #temporadas .temporadas, #musicas .temporadas {
         display: flex;
         justify-content: center;
-        margin: 10% 5% 15%;
+        margin: 10% 5% 5%;
     }
     #temporadas .temporadas .temporada h2, #musicas .temporadas .temporada h2 {
-        padding: 8% 0;
+        padding: 8%;
     }
 }
 
@@ -145,12 +167,21 @@
         margin: 1% 5% 4%;
         padding: 4%;
     }
+    
+    #temporadas .flex-row-desktop {
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+    #musicas {
+        margin-bottom: 12%;
+    }
     #temporadas .temporadas, #musicas .temporadas {
         display: flex;
         justify-content: center;
-        margin: 10% 5% 15%;
+        margin: 10% 5% 5%;
     }
     #temporadas .temporadas .temporada h2, #musicas .temporadas .temporada h2 {
-        padding: 7% 0;
+        padding: 8%;
     }
 }
