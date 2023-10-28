@@ -14,9 +14,11 @@
 
     <header id="cabecalho">
 
-        <div class="logo">
-            <img src="src/imagens/logo.png" alt="Logo da série: Não me abrace, estou assustado">
-        </div>
+        <figure class="logo">
+            <a href="index.html" aria-label="Imagem clicável para a página incial no topo" rel="self">
+                <img src="src/imagens/logo.png" alt="Logo da série: Não me abrace, estou assustado">
+            </a>
+        </figure>
 
         <nav class="nav">
             <ul>
@@ -83,7 +85,7 @@
             
             <article class="flex-row-desktop">
                 <article class="temporadas">
-                    <a href="src/view/temporada-1.html" rel="next" class="temporada">
+                    <a href="src/view/temporada-1.html" aria-label="Veja os episódios da 1ª temporada clicando aqui" rel="next" class="temporada">
                 
                         <figure class="capa">
                             <img src="src/imagens/temporada1.jpeg" alt="Temporada 1">
@@ -94,7 +96,7 @@
                     </a>
                 </article>
                 <article class="temporadas">
-                    <a href="src/view/temporada-2.html" rel="next" class="temporada">
+                    <a href="src/view/temporada-2.html" aria-label="Veja os episódios da 2ª temporada clicando aqui" rel="next" class="temporada">
                 
                         <figure class="capa">
                             <img src="src/imagens/temporada2.png" alt="Temporada 2">
@@ -113,7 +115,7 @@
             </div>
 
             <article class="temporadas">
-                <a href="src/view/musicas.html" rel="next" class="temporada">
+                <a href="src/view/musicas.html" aria-label="Veja todas as músicas da websérie clicando aqui" rel="next" class="temporada">
 
                     <figure class="capa">
                         <img src="src/imagens/musicas.png" alt="Músicas das temporadas 1 e 2">
@@ -126,7 +128,7 @@
 
         </section>
 
-        <span class="material-symbols-outlined sr-only" id="topo" aria-hidden="true" tabindex="0">
+        <span class="material-symbols-outlined sr-only" id="topo" aria-hidden="true" aria-label="Volte ao topo da página clicando aqui" tabindex="0">
             shift
         </span>
 
