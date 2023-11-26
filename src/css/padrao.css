@@ -23,6 +23,9 @@ html {
 a {
     text-decoration: none;
 }
+:focus {
+    outline: 0;
+}
 
 /* O corpo do site */
 
@@ -38,10 +41,14 @@ a {
 #cabecalho .logo a {
     display: inline;
 }
+#cabecalho .logo a:focus-visible {
+    outline: auto;
+    border-radius: 0 0 5em 5em;
+}
 #cabecalho .logo img {
     width: 100%;
-    height: 100%;
-    border-radius: 0 0 3em 3em;;
+    height: auto;
+    border-radius: 0 0 3em 3em;
 }
 
 #cabecalho .nav ul {
@@ -59,7 +66,8 @@ a {
     transition-duration: .6s;
     border-radius: 1.5em 1.5em 0 0;
 }
-#cabecalho .nav ul a:hover {
+#cabecalho .nav ul a:hover,
+#cabecalho .nav ul a:focus {
     background-color: white;
     color: #BF7839;
     padding: 3% 5%;
@@ -77,7 +85,8 @@ a {
     width: max-content;
     padding: 3% 2%;
 }
-#cabecalho .nav ul .ative:hover {
+#cabecalho .nav ul .ative:hover,
+#cabecalho .nav ul .ative:focus {
     background-color: white;
     color: #BF7839;
 }
@@ -115,6 +124,7 @@ a {
     right: 2%;
     bottom: 6%;
     background-color: #D96277;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.158);
     color: white;
     border-radius: 10em;
     padding: 1%;
@@ -122,12 +132,16 @@ a {
     cursor: pointer;
     transition-duration: .4s;
 }
-#conteudo #topo:hover {
+#conteudo #topo:hover,
+#conteudo #topo:focus {
     background-color: #91D9D2;
 }
 #conteudo #topo:active {
     background-color: white;
     color: #91D9D2;
+}
+#conteudo #topo:focus-visible {
+    outline: auto;
 }
 
 /* O rodapé do site */
@@ -168,13 +182,21 @@ a {
     text-decoration: none;
     transition-duration: .6s;
 }
-#rodape a:hover {
+#rodape a:hover,
+#rodape a:focus {
     color: #D96277;
     transition-duration: .6s;
 }
 #rodape a:active {
     color: #BF7839;
     transition-duration: .1s;
+}
+#rodape a:focus {
+    border-radius: 10em;
+}
+#rodape a:focus-visible {
+    outline: auto;
+    transition: .2s;
 }
 
 /* A responsividade do site */

@@ -55,19 +55,25 @@
     justify-content: center;
     margin: 1% auto;
 }
-#temporadas .temporadas .temporada .capa, #musicas .temporadas .temporada .capa {
+#temporadas .temporadas .temporada .capa, 
+#musicas .temporadas .temporada .capa {
     overflow: hidden;
 }
-#temporadas .temporadas .temporada .capa img, #musicas .temporadas .temporada .capa img {
+#temporadas .temporadas .temporada .capa img, 
+#musicas .temporadas .temporada .capa img {
     width: 100%;
     height: 100%;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.267);
     transition: .6s ease-out;
 }
-#temporadas .temporadas .temporada:hover img, #musicas .temporadas .temporada:hover img {
+#temporadas .temporadas .temporada:hover img, 
+#musicas .temporadas .temporada:hover img,
+#temporadas .temporadas .temporada:focus img,
+#musicas .temporadas .temporada:focus img {
     transform: scale(1.1);
 }
-#temporadas .temporadas .temporada, #musicas .temporadas .temporada {
+#temporadas .temporadas .temporada, 
+#musicas .temporadas .temporada {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -78,12 +84,16 @@
     border-radius: 0 0 5em 5em;
     transition-duration: .4s;
 }
-#temporadas .temporadas .temporada:hover, #musicas .temporadas .temporada:hover {
+#temporadas .temporadas .temporada:hover, 
+#musicas .temporadas .temporada:hover,
+#temporadas .temporadas .temporada:focus, 
+#musicas .temporadas .temporada:focus {
     background-color: #D96277;
     color: white;
     box-shadow: 0px 0px 10px 1px #0d0d0d5e;
 }
-#temporadas .temporadas .temporada:active, #musicas .temporadas .temporada:active {
+#temporadas .temporadas .temporada:active, 
+#musicas .temporadas .temporada:active {
     background-color: white;
     color: #D96277;
     transition-duration: .2s;

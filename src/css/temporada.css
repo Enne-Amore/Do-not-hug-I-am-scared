@@ -84,7 +84,8 @@
     transition-duration: .4s;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.158);
 }
-#episodios .episodio .opcoes a:hover {
+#episodios .episodio .opcoes a:hover,
+#episodios .episodio .opcoes a:focus {
     background-color: #91D9D2;
     color: white;
     transition-duration: .4s;
