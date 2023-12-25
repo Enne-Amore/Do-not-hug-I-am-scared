@@ -68,8 +68,8 @@
 }
 #temporadas .temporadas .temporada:hover img, 
 #musicas .temporadas .temporada:hover img,
-#temporadas .temporadas .temporada:focus img,
-#musicas .temporadas .temporada:focus img {
+#temporadas .temporadas .temporada:focus-visible img,
+#musicas .temporadas .temporada:focus-visible img {
     transform: scale(1.1);
 }
 #temporadas .temporadas .temporada, 
@@ -86,8 +86,8 @@
 }
 #temporadas .temporadas .temporada:hover, 
 #musicas .temporadas .temporada:hover,
-#temporadas .temporadas .temporada:focus, 
-#musicas .temporadas .temporada:focus {
+#temporadas .temporadas .temporada:focus-visible, 
+#musicas .temporadas .temporada:focus-visible {
     background-color: #D96277;
     color: white;
     box-shadow: 0px 0px 10px 1px #0d0d0d5e;

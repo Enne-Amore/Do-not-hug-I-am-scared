@@ -72,7 +72,7 @@ footer .voltar {
     overflow: hidden;
 }
 footer .voltar:hover,
-footer a:focus .voltar {
+footer a:focus-visible .voltar {
     box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.267);
     transition-duration: .2s;
 }
@@ -80,7 +80,7 @@ footer .voltar:active {
     box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.473);
     transition-duration: .1s;
 }
-footer a:focus {
+footer a:focus-visible {
     border-radius: 10em;
 }
 /* A responsividade do site */

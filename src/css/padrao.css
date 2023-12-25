@@ -67,7 +67,7 @@ a {
     border-radius: 1.5em 1.5em 0 0;
 }
 #cabecalho .nav ul a:hover,
-#cabecalho .nav ul a:focus {
+#cabecalho .nav ul a:focus-visible {
     background-color: white;
     color: #BF7839;
     padding: 3% 5%;
@@ -86,7 +86,7 @@ a {
     padding: 3% 2%;
 }
 #cabecalho .nav ul .ative:hover,
-#cabecalho .nav ul .ative:focus {
+#cabecalho .nav ul .ative:focus-visible {
     background-color: white;
     color: #BF7839;
 }
@@ -133,7 +133,7 @@ a {
     transition-duration: .4s;
 }
 #conteudo #topo:hover,
-#conteudo #topo:focus {
+#conteudo #topo:focus-visible {
     background-color: #91D9D2;
 }
 #conteudo #topo:active {
@@ -183,18 +183,15 @@ a {
     transition-duration: .6s;
 }
 #rodape a:hover,
-#rodape a:focus {
+#rodape a:focus-visible {
     color: #D96277;
-    transition-duration: .6s;
 }
 #rodape a:active {
     color: #BF7839;
     transition-duration: .1s;
 }
-#rodape a:focus {
-    border-radius: 10em;
-}
 #rodape a:focus-visible {
+    border-radius: 10em;
     outline: auto;
     transition: .2s;
 }
@@ -212,7 +209,8 @@ a {
     #cabecalho .nav ul {
         margin: auto;
     }
-    #cabecalho .nav ul a, #cabecalho .nav ul .ative {
+    #cabecalho .nav ul a, 
+    #cabecalho .nav ul .ative {
         font-size: 1.15em;
         padding: 4% 0;
     }
