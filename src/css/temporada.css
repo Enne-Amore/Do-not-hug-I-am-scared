@@ -30,6 +30,7 @@
 
 #episodios .episodio .capa {
     overflow: hidden;
+    border-radius: 0 0 1em 1em;
 }
 #episodios .episodio .capa img {
     width: 100%;
@@ -50,7 +51,7 @@
     background-color: #D96277;
     color: white;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.158);
-    border-radius: 2em 2em 0 0;
+    border-radius: 2em;
     width: auto;
     font-family: 'puppet';
     font-size: 2em;
@@ -62,12 +63,11 @@
 #episodios .episodio .ep h2 {
     margin: 1%;
     font-weight: bolder;
+    font-size: 1.4em;
 }
 
 #episodios .episodio .opcoes {
     display: flex;
-    gap: 0;
-    margin: 0;
     justify-content: center;
     align-items: center;
 }
@@ -78,8 +78,7 @@
     width: max-content;
     font-size: 1.2em;
     font-weight: bolder;
-    margin: 0;
-    padding: 1em 1em;
+    padding: 0.85em 1em 1em;
     border-radius: 0 0 5em 5em;
     transition-duration: .4s;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.158);
@@ -88,7 +87,6 @@
 #episodios .episodio .opcoes a:focus-visible {
     background-color: #91D9D2;
     color: white;
-    transition-duration: .4s;
 }
 #episodios .episodio .opcoes a:active {
     background-color: white;
@@ -110,7 +108,7 @@
         margin-bottom: 12%;
     }
     #episodios .episodio .ep {
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
 }
 

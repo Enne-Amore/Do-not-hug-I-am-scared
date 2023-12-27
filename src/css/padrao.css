@@ -112,7 +112,7 @@ a {
     color: #730202;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.158);
     border-radius: 1em;
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: center;
     font-family: 'marionete';
     padding: 0.15em 1em;
@@ -180,7 +180,11 @@ a {
 #rodape a {
     color: #91D9D2;
     text-decoration: none;
-    transition-duration: .6s;
+    font-weight: bolder;
+    transition-duration: .4s;
+}
+#rodape a:focus-visible {
+    outline: auto;
 }
 #rodape a:hover,
 #rodape a:focus-visible {
@@ -247,6 +251,7 @@ a {
     }
     #rodape .creditos {
         margin: 5% 15% 0;
+        font-size: 1.2em;
     }
     #rodape .creditos .lista {
         columns: 1;

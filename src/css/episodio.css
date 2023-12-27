@@ -34,19 +34,17 @@ body {
     margin: 0.2em auto;
 }
 #episodio .video {
+    position: relative;
     padding: 13em;
     padding-bottom: 4%;
-    position: relative;
     margin: auto;
 }
 #episodio .video iframe {
+    position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
     width: 100%;
     height: 100%;
-    position: absolute;
 }
 #episodio .video-indisponivel {
     width: 60%;
@@ -95,8 +93,8 @@ footer a:focus-visible {
         font-size: 10.5vw;
     }
     #episodio .video {
-        padding: 44vw;
-        padding-bottom: 5%;
+        padding: 46vw;
+        padding-bottom: 6%;
         margin: 5% auto;
     }
     #episodio .video-indisponivel {
@@ -120,7 +118,7 @@ footer a:focus-visible {
     }
     #episodio .video {
         padding: 46vw;
-        padding-bottom: 5%;
+        padding-bottom: 6%;
         margin: 5% auto;
     }
     #episodio .video-indisponivel {

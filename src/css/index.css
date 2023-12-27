@@ -50,7 +50,8 @@
 #musicas {
     margin-bottom: 5%;
 }
-#temporadas .temporadas, #musicas .temporadas {
+#temporadas .temporadas,
+#musicas .temporadas {
     display: flex;
     justify-content: center;
     margin: 1% auto;
@@ -58,6 +59,7 @@
 #temporadas .temporadas .temporada .capa, 
 #musicas .temporadas .temporada .capa {
     overflow: hidden;
+    border-radius: 1em 1em 0 0;
 }
 #temporadas .temporadas .temporada .capa img, 
 #musicas .temporadas .temporada .capa img {
@@ -81,7 +83,7 @@
     background-color: #91D9D2;
     color: white;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.158);
-    border-radius: 0 0 5em 5em;
+    border-radius: 5em 5em;
     transition-duration: .4s;
 }
 #temporadas .temporadas .temporada:hover, 

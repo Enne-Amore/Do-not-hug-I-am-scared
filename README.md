@@ -26,13 +26,13 @@ Um site web em forma de **landing page** que possui a websérie "Não Me Abrace,
 
 ## 🌈 Documentação De Cores
 
-| Cor               | Hexadecimal                                                |
-| ----------------- | ---------------------------------------------------------------- |
-| Rosa       | ![#D96277](https://via.placeholder.com/10/D96277?text=+) #D96277 |
-| Azul       | ![#91D9D2](https://via.placeholder.com/10/91D9D2?text=+) #91D9D2 |
-| Marrom       | ![#BF7839](https://via.placeholder.com/10/BF7839?text=+) #BF7839 |
+| Cor            | Hexadecimal                                                      |
+| -------------- | ---------------------------------------------------------------- |
+| Rosa           | ![#D96277](https://via.placeholder.com/10/D96277?text=+) #D96277 |
+| Azul           | ![#91D9D2](https://via.placeholder.com/10/91D9D2?text=+) #91D9D2 |
+| Marrom         | ![#BF7839](https://via.placeholder.com/10/BF7839?text=+) #BF7839 |
 | Vermelha       | ![#730202](https://via.placeholder.com/10/730202?text=+) #730202 |
-| Preta      | ![#0D0D0D](https://via.placeholder.com/10/0D0D0D?text=+) #0D0D0D |
+| Preta          | ![#0D0D0D](https://via.placeholder.com/10/0D0D0D?text=+) #0D0D0D |
 
 
 ## 🌟 Referências De Uso
