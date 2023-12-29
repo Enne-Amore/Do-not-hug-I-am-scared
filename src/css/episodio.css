@@ -31,7 +31,7 @@ body {
     justify-content: center;
 }
 #episodio .nome {
-    margin: 0.2em auto;
+    margin: 0.4em auto 0.2em;
 }
 #episodio .video {
     position: relative;
@@ -45,6 +45,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 3px;
 }
 #episodio .video-indisponivel {
     width: 60%;
@@ -52,6 +53,7 @@ body {
     margin: auto;
     background-color: white;
     color: #730202;
+    border-radius: 3px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,7 +91,7 @@ footer a:focus-visible {
         background-position: center;
     }
     #episodio .nome {
-        margin-top: 5%;
+        margin-top: 8%;
         font-size: 10.5vw;
     }
     #episodio .video {
@@ -114,7 +116,7 @@ footer a:focus-visible {
         background-position: center;
     }
     #episodio .nome {
-        margin-top: 5%;
+        margin-top: 8%;
     }
     #episodio .video {
         padding: 46vw;
@@ -137,7 +139,7 @@ footer a:focus-visible {
         background-position: center;
     }
     #episodio .nome {
-        margin-top: 5%;
+        margin-top: 8%;
     }
     #episodio .video {
         padding: 46vw;
@@ -160,7 +162,7 @@ footer a:focus-visible {
         background-position: center;
     }
     #episodio .nome {
-        margin-top: 5%;
+        margin-top: 8%;
     }
     #episodio .video {
         padding: 48vw;

@@ -6,25 +6,12 @@
 }
 
 /* A mente do site */
-* {
-    margin: 0;
-    padding: 0;
-}
 body {
     font: 1.8vw Arial, sans-serif;
     margin: 0;
     max-width: 100%;
     height: auto;
     text-align: justify;
-}
-html {
-    scroll-behavior: smooth;
-}
-a {
-    text-decoration: none;
-}
-:focus {
-    outline: 0;
 }
 
 /* O corpo do site */
@@ -185,6 +172,7 @@ a {
 }
 #rodape a:focus-visible {
     outline: auto;
+    padding: 0.2em;
 }
 #rodape a:hover,
 #rodape a:focus-visible {

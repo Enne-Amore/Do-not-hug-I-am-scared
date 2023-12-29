@@ -68,7 +68,7 @@
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.267);
     transition: .6s ease-out;
 }
-#temporadas .temporadas .temporada:hover img, 
+#temporadas .temporadas .temporada:hover img,
 #musicas .temporadas .temporada:hover img,
 #temporadas .temporadas .temporada:focus-visible img,
 #musicas .temporadas .temporada:focus-visible img {
@@ -99,6 +99,9 @@
     background-color: white;
     color: #D96277;
     transition-duration: .2s;
+}
+#musicas .temporadas {
+    margin: 1% 20%;
 }
 #temporadas .temporadas .temporada h2 {
     padding: 7%;
