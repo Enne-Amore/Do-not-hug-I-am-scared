@@ -1,27 +1,27 @@
 
 # 🧶  Não Me Abrace, Estou Assustado
 
-Um site web em forma de **landing page** que possui a websérie "Não Me Abrace, Estou Assustado" como o conteúdo. Possui alguns textos introdutórios, listas de episódios e um compilado de suas músicas.
-
-
-## ✅ Demonstração
-
-[Clique aqui para acessar o meu site](https://enne-amore.github.io/Do-not-hug-I-am-scared/)
-
-
-## 🚀 Tecnologias Utilizadas
-
-- HTML
-- CSS
-- JavaScript
+ Um site web em forma de **landing page** que possui a websérie "Não Me Abrace, Estou Assustado" como o conteúdo. Possui alguns textos introdutórios, listas de episódios e um compilado de suas músicas.
 
 
 ## 🪄 Funcionalidades
 
-- Barra horizontal de navegação por dentro da página
-- Mais acessibilidade usando a tecla "tab"
-- Efeitos de "hover" e de "active" nos elementos clicáveis
-- Botão de voltar ao topo da página
+ - Barra horizontal de navegação por dentro da página
+ - Mais acessibilidade usando a tecla "tab"
+ - Efeitos de "hover" e de "active" nos elementos clicáveis
+ - Botão de voltar ao topo da página
+
+
+## ✅ Demonstração
+
+ [Clique aqui para acessar o meu site](https://enne-amore.github.io/Do-not-hug-I-am-scared/)
+
+
+## 🚀 Tecnologias Utilizadas
+
+ - HTML
+ - CSS
+ - JavaScript
 
 
 ## 🌈 Documentação De Cores
@@ -46,4 +46,4 @@ Um site web em forma de **landing page** que possui a websérie "Não Me Abrace,
 
 ## 🔧 Suporte
 
-Para me contatar como suporte, o meu email é EnneFofe10@gmail.com 
+ Para me contatar como suporte, o meu email é EnneFofe10@gmail.com 
