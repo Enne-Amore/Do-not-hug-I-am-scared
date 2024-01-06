@@ -20,7 +20,7 @@
     border-radius: 10em;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.267);
 }
-#sobre .retangulo {
+#sobre .parte .retangulo {
     width: fit-content;
     height: fit-content;
     border-radius: 1em;
@@ -28,10 +28,9 @@
     color: white;
     padding: 2%;
     font-family: 'puppet';
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.123);
-}
-#sobre .parte .retangulo {
     font-size: 1.3em;
+    line-height: 1.3em;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.123);
 }
 #sobre .parte.meio .retangulo {
     margin: 3% auto 0;
