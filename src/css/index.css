@@ -129,7 +129,7 @@
     #sobre .parte .circulo img {
         border-radius: 10em 10em 0 0;
     }
-    #sobre .retangulo {
+    #sobre .parte .retangulo {
         margin: 0 5%;
         padding: 5%;
     }
@@ -173,7 +173,7 @@
     #sobre .parte .circulo img {
         border-radius: 10em 10em 0 0;
     }
-    #sobre .retangulo {
+    #sobre .parte .retangulo {
         margin: 0 5%;
         padding: 4%;
     }
