@@ -23,14 +23,14 @@
 }
 /* Animações de entrada e saída */
 #episodios .episodio:nth-child(odd) {
-    animation: esquerda 2s ease-out;
+    animation: esquerda 2s ease-out forwards;
     animation-timeline: view();
-    animation-range: cover 0 cover 48%;
+    animation-range: cover -10% cover 48%;
 }
 #episodios .episodio:nth-child(even) {
-    animation: direita 2s ease-out;
+    animation: direita 2s ease-out forwards;
     animation-timeline: view();
-    animation-range: cover 0 cover 48%;
+    animation-range: cover -10% cover 48%;
 }
 
 #episodios .episodio .capa {

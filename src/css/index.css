@@ -13,13 +13,13 @@
 #sobre #parte-2 .circulo {
     animation: esquerda 2s ease-out;
     animation-timeline: view();
-    animation-range: cover 0 cover 48%;
+    animation-range: cover -10% cover 48%;
 }
 #sobre #parte-1 .circulo,
 #sobre #parte-2 .retangulo {
     animation: direita 2s ease-out;
     animation-timeline: view();
-    animation-range: cover 0 cover 48%;
+    animation-range: cover -10% cover 48%;
 }
 #sobre .parte .circulo img {
     width: 100%;
@@ -45,7 +45,7 @@
     padding: 2% 3%;
     animation: baixo 2s ease-out;
     animation-timeline: view();
-    animation-range: cover 0 cover 48%;
+    animation-range: cover -10% cover 48%;
 }
 
 #temporadas .eps-container {
@@ -69,17 +69,17 @@
 #temporadas .temporadas:nth-child(odd) {
     animation: esquerda 2s ease-out;
     animation-timeline: view();
-    animation-range: cover 0 cover 48%;
+    animation-range: cover -10% cover 48%;
 }
 #temporadas .temporadas:nth-child(even) {
     animation: direita 2s ease-out;
     animation-timeline: view();
-    animation-range: cover 0 cover 48%;
+    animation-range: cover -10% cover 48%;
 }
 #musicas .temporadas {
     animation: baixo 2s ease-out;
     animation-timeline: view();
-    animation-range: cover 0 cover 48%;
+    animation-range: cover -10% cover 48%;
 }
 #temporadas .temporadas .temporada .capa, 
 #musicas .temporadas .temporada .capa {
