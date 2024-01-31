@@ -1,3 +1,15 @@
+@charset "UTF-8";
+
+/* Fontes */
+@font-face {
+    font-family: 'marionete';
+    src: url(../fontes/TrashToys02.ttf) format(truetype);
+}
+@font-face {
+    font-family: 'puppet';
+    src: url(../fontes/cartoon_toy_turbo/Cartoon\ Toy\ Turbo\ Bold.otf) format(opentype);
+}
+
 /* Reset nas tags */
 * {
     margin: 0;
@@ -6,6 +18,7 @@
 }
 body {
     background-color: black;
+    overflow-x: hidden;
     animation: aparecer 0.5s ease-out ;
 }
 html {
@@ -19,15 +32,24 @@ a {
     outline: 0;
 }
 
+/* Variáveis CSS */
+:root {
+    --rosa: #D96277;
+    --azul: #91D9D2;
+    --marrom: #BF7839;
+    --vermelha: #730202;
+    --preta: #0D0D0D;
+}
+
 /* Estilização da barrinha de rolagem */
 ::-webkit-scrollbar {
     width: auto;
 }
 ::-webkit-scrollbar-track {
-    background-color: #0D0D0D;
+    background-color: var(--preta);
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #D96277;
+    background-color: var(--rosa);
     border-radius: 1em;
 }
 
@@ -39,6 +61,49 @@ a {
     }
     100% {
         transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* Animações dos elementos */
+@keyframes esquerda {
+    from {
+        opacity: 0;
+        translate: -10vw 0;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes direita {
+    from {
+        opacity: 0;
+        translate: 10vw 0;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes baixo {
+    from {
+        opacity: 0;
+        translate: 0 20vh;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
         opacity: 1;
     }
 }

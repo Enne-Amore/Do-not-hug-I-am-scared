@@ -1,23 +1,17 @@
 @charset 'UTF-8';
 
-@font-face {
-    font-family: 'puppet';
-    src: url(../fontes/cartoon_toy_turbo/Cartoon\ Toy\ Turbo\ Bold.otf) format(opentype);
-}
-
-
 /* O conteúdo do site de episódios */
-
 #episodios {
     text-align: center;
 }
 
-#episodios .flex-row-desktop {
+#episodios .eps-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto 10%;
-    gap: 5vw;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+    gap: 3em;
 }
 
 #episodios .episodio {
@@ -25,7 +19,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1% auto 5%;
+    width: 40%;
+}
+/* Animações de entrada e saída */
+#episodios .episodio:nth-child(odd) {
+    animation: esquerda 2s ease-out;
+    animation-timeline: view();
+    animation-range: cover 0 cover 48%;
+}
+#episodios .episodio:nth-child(even) {
+    animation: direita 2s ease-out;
+    animation-timeline: view();
+    animation-range: cover 0 cover 48%;
 }
 
 #episodios .episodio .capa {
@@ -42,13 +47,13 @@
     transform: scale(1.1);
 }
 #episodios .ep:active ~ .opcoes a {
-    background-color: #91D9D2;
+    background-color: var(--azul);
     transition-duration: .2s;
 }
 
 #episodios .episodio .ep {
     position: relative;
-    background-color: #D96277;
+    background-color: var(--rosa);
     color: white;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.158);
     border-radius: 2em;
@@ -73,7 +78,7 @@
 }
 
 #episodios .episodio .opcoes a {
-    background-color: #D96277;
+    background-color: var(--rosa);
     color: white;
     width: max-content;
     font-size: 1.2em;
@@ -85,26 +90,27 @@
 }
 #episodios .episodio .opcoes a:hover,
 #episodios .episodio .opcoes a:focus-visible {
-    background-color: #91D9D2;
+    background-color: var(--azul);
     color: white;
 }
 #episodios .episodio .opcoes a:active {
     background-color: white;
-    color: #91D9D2;
+    color: var(--azul);
     transition-duration: .1s;
 }
-/* A responsividade do site */
 
+/* A responsividade do site */
 @media only screen and (max-width: 600px) {
-    #episodios .flex-row-desktop {
+    #episodios .eps-container {
         flex-direction: column;
         margin: 0;
         gap: 0;
     }
     #episodios .episodio {
         margin: 10% 5% 5%;
+        width: fit-content;
     }
-    #episodios .flex-row-desktop:last-child .episodio:last-child {
+    #episodios .eps-container:last-child .episodio:last-child {
         margin-bottom: 12%;
     }
     #episodios .episodio .ep {
@@ -113,15 +119,16 @@
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
-    #episodios .flex-row-desktop {
+    #episodios .eps-container {
         flex-direction: column;
         margin: 0;
         gap: 0;
     }
     #episodios .episodio {
         margin: 8% 5% 10%;
+        width: fit-content;
     }
-    #episodios .flex-row-desktop:last-child .episodio:last-child {
+    #episodios .eps-container:last-child .episodio:last-child {
         margin-bottom: 14%;
     }
 }

@@ -1,17 +1,6 @@
 @charset 'UTF-8';
 
-@font-face {
-    font-family: 'marionete';
-    src: url(../fontes/TrashToys02.ttf) format(truetype);
-}
-
-@font-face {
-    font-family: 'puppet';
-    src: url(../fontes/cartoon_toy_turbo/Cartoon\ Toy\ Turbo\ Bold.otf) format(opentype);
-}
-
 /* A mente das páginas */
-
 body {
     font: 2em 'marionete';
     max-width: 100%;
@@ -24,7 +13,6 @@ body {
 }
 
 /* O vídeo apresentado para cada página */
-
 #episodio {
     display: flex;
     flex-direction: column;
@@ -52,7 +40,7 @@ body {
     height: 6em;
     margin: auto;
     background-color: white;
-    color: #730202;
+    color: var(--vermelha);
     border-radius: 3px;
     display: flex;
     align-items: center;
@@ -83,8 +71,8 @@ footer .voltar:active {
 footer a:focus-visible {
     border-radius: 10em;
 }
-/* A responsividade do site */
 
+/* A responsividade do site */
 @media only screen and (max-width: 600px) {
     body {
         background-attachment: fixed;

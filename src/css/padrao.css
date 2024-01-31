@@ -1,10 +1,5 @@
 @charset 'UTF-8';
 
-@font-face {
-    font-family: 'marionete';
-    src: url(../fontes/TrashToys02.ttf) format(truetype);
-}
-
 /* A mente do site */
 body {
     font: 1.8vw Arial, sans-serif;
@@ -15,10 +10,9 @@ body {
 }
 
 /* O corpo do site */
-
 #cabecalho {
-    background-color: #0D0D0D;
-    box-shadow: 0px 0px 10px 5px #0d0d0d5e;
+    background-color: var(--preta);
+    box-shadow: 0px 0px 10px 5px var(--preta)5e;
     position: relative;
 }
 
@@ -56,18 +50,18 @@ body {
 #cabecalho .nav ul a:hover,
 #cabecalho .nav ul a:focus-visible {
     background-color: white;
-    color: #BF7839;
+    color: var(--marrom);
     padding: 3% 5%;
     transition-duration: .6s;
 }
 #cabecalho .nav ul a:active {
-    background-color: #BF7839;
+    background-color: var(--marrom);
     color: white;
     transition-duration: .1s;
 }
 
 #cabecalho .nav ul .ative {
-    background-color: #BF7839;
+    background-color: var(--marrom);
     color: white;
     width: max-content;
     padding: 3% 2%;
@@ -75,15 +69,14 @@ body {
 #cabecalho .nav ul .ative:hover,
 #cabecalho .nav ul .ative:focus-visible {
     background-color: white;
-    color: #BF7839;
+    color: var(--marrom);
 }
 #cabecalho .nav ul .ative:active {
-    background-color: #BF7839;
+    background-color: var(--marrom);
     color: white;
 }
 
 /* O conteúdo do site */
-
 #conteudo {
     background-image: url(../imagens/fundo1.jpg);
     background-repeat: no-repeat;
@@ -95,8 +88,8 @@ body {
 #conteudo .titulo {
     width: max-content;
     height: auto;
-    background-color: #91D9D2;
-    color: #730202;
+    background-color: var(--azul);
+    color: var(--vermelha);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.158);
     border-radius: 1em;
     font-size: 1.8em;
@@ -110,7 +103,7 @@ body {
     position: fixed;
     right: 2%;
     bottom: 6%;
-    background-color: #D96277;
+    background-color: var(--rosa);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.158);
     color: white;
     border-radius: 10em;
@@ -118,24 +111,24 @@ body {
     font-size: 2.5em;
     cursor: pointer;
     transition-duration: .4s;
+    animation: fade .5s ease;
 }
 #conteudo #topo:hover,
 #conteudo #topo:focus-visible {
-    background-color: #91D9D2;
+    background-color: var(--azul);
 }
 #conteudo #topo:active {
     background-color: white;
-    color: #91D9D2;
+    color: var(--azul);
 }
 #conteudo #topo:focus-visible {
     outline: auto;
 }
 
 /* O rodapé do site */
-
 #rodape {
     text-align: center;
-    background-color: #0D0D0D;
+    background-color: var(--preta);
     color: white;
     padding: 2%;
     font-style: italic;
@@ -165,7 +158,7 @@ body {
 }
 
 #rodape a {
-    color: #91D9D2;
+    color: var(--azul);
     text-decoration: none;
     font-weight: bolder;
     transition-duration: .4s;
@@ -176,10 +169,10 @@ body {
 }
 #rodape a:hover,
 #rodape a:focus-visible {
-    color: #D96277;
+    color: var(--rosa);
 }
 #rodape a:active {
-    color: #BF7839;
+    color: var(--marrom);
     transition-duration: .1s;
 }
 #rodape a:focus-visible {
@@ -189,7 +182,6 @@ body {
 }
 
 /* A responsividade do site */
-
 @media screen and (max-width: 1200px) {
     body {
         font-size: 4vw;
