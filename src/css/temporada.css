@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
 /* O conteúdo do site de episódios */
 #episodios {
@@ -21,14 +21,13 @@
     align-items: center;
     width: 40%;
 }
-/* Animações de entrada e saída */
 #episodios .episodio:nth-child(odd) {
-    animation: esquerda 2s ease-out forwards;
+    animation: esquerda 2s ease-out;
     animation-timeline: view();
     animation-range: cover -10% cover 48%;
 }
 #episodios .episodio:nth-child(even) {
-    animation: direita 2s ease-out forwards;
+    animation: direita 2s ease-out;
     animation-timeline: view();
     animation-range: cover -10% cover 48%;
 }

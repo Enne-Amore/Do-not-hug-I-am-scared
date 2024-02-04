@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
 /* O conteúdo do site */
 #sobre .parte {
@@ -8,18 +8,13 @@
     gap: 2%;
     margin: 2% 5%;
 }
-/* Animações de entrada e saída */
 #sobre #parte-1 .retangulo,
 #sobre #parte-2 .circulo {
     animation: esquerda 2s ease-out;
-    animation-timeline: view();
-    animation-range: cover -10% cover 48%;
 }
 #sobre #parte-1 .circulo,
 #sobre #parte-2 .retangulo {
     animation: direita 2s ease-out;
-    animation-timeline: view();
-    animation-range: cover -10% cover 48%;
 }
 #sobre .parte .circulo img {
     width: 100%;
@@ -65,7 +60,6 @@
     justify-content: center;
     margin: 1% auto;
 }
-/* Animações de entrada e saída */
 #temporadas .temporadas:nth-child(odd) {
     animation: esquerda 2s ease-out;
     animation-timeline: view();
