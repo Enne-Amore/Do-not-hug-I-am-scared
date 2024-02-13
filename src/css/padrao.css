@@ -125,7 +125,7 @@ body {
     outline: auto;
 }
 
-/* O rodapé do site */
+/* Rodapé */
 #rodape {
     text-align: center;
     background-color: var(--preta);
@@ -182,7 +182,8 @@ body {
 }
 
 /* A responsividade do site */
-@media screen and (max-width: 1200px) {
+/* Dispositivos em pé */
+@media screen and (max-width: 1200px) and (orientation: portrait) {
     body {
         font-size: 4vw;
     }
@@ -238,5 +239,28 @@ body {
     }
     #rodape .creditos .lista li {
         margin-bottom: 10%;
+    }
+}
+
+/* Dispositivos deitados */
+@media screen and (max-width: 1200px) and (orientation: landscape) {
+    #cabecalho .logo {
+        margin-bottom: 0.8em;
+    }
+    #cabecalho .nav ul {
+        margin: auto;
+    }
+    #cabecalho .nav ul a {
+        font-size: 1.6em;
+    }
+    #cabecalho .nav ul .ative {
+        padding: 3% 4%;
+    }
+    #cabecalho .nav ul .ative:hover {
+        padding: 3% 6.5%;
+    }
+
+    #rodape {
+        font-size: 1.2em;
     }
 }

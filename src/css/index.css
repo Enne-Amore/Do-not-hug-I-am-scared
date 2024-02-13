@@ -130,8 +130,8 @@
 }
 
 /* A responsividade do site */
-
-@media only screen and (max-width: 600px) {
+/* Dispositivos em pé */
+@media screen and (max-width: 1200px) and (orientation: portrait) {
     #conteudo #parte-1 {
         flex-direction: column-reverse;
     }
@@ -176,46 +176,13 @@
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1200px) {
-    #conteudo #parte-1 {
-        flex-direction: column-reverse;
-    }
-    #conteudo #parte-2 {
-        flex-direction: column;
-    }
-    #conteudo .parte {
-        margin: 10% auto 12% auto;
+/* Dispositivos deitados */
+@media screen and (max-width: 1200px) and (orientation: landscape) {
+    #sobre .parte {
+        margin: 2% 5% 4%;
     }
     #sobre .parte .circulo {
-        display: flex;
-        margin: 0 18%;
-    }
-    #sobre .parte .circulo img {
-        border-radius: 10em 10em 0 0;
-    }
-    #sobre .parte .retangulo {
-        margin: 0 5%;
-        padding: 4%;
-    }
-    #sobre .parte.meio .retangulo {
-        margin: 1% 5% 4%;
-        padding: 4%;
-    }
-    
-    #temporadas .eps-container {
-        flex-direction: column;
-        margin: 0;
-        gap: 0;
-    }
-    #musicas {
-        margin-bottom: 12%;
-    }
-    #temporadas .temporadas, #musicas .temporadas {
-        display: flex;
-        justify-content: center;
-        margin: 10% 5% 5%;
-    }
-    #temporadas .temporadas .temporada h2, #musicas .temporadas .temporada h2 {
-        padding: 8%;
+        width: 60%;
+        height: 60%;
     }
 }

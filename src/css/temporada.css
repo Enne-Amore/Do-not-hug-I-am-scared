@@ -99,7 +99,7 @@
 }
 
 /* A responsividade do site */
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) and (orientation: portrait) {
     #episodios .eps-container {
         flex-direction: column;
         margin: 0;
@@ -117,17 +117,12 @@
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1200px) {
-    #episodios .eps-container {
-        flex-direction: column;
-        margin: 0;
-        gap: 0;
-    }
+/* Dispositivos deitados */
+@media screen and (max-width: 1200px) and (orientation: landscape) {
     #episodios .episodio {
-        margin: 8% 5% 10%;
-        width: fit-content;
+        width: 43%;
     }
-    #episodios .eps-container:last-child .episodio:last-child {
-        margin-bottom: 14%;
+    #episodios .episodio .opcoes a {
+        font-size: 1.4em;
     }
 }

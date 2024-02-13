@@ -73,7 +73,8 @@ footer a:focus-visible {
 }
 
 /* A responsividade do site */
-@media only screen and (max-width: 600px) {
+/* Dispositivos em pé */
+@media screen and (max-width: 1200px) and (orientation: portrait) {
     body {
         background-attachment: fixed;
         background-position: center;
@@ -91,83 +92,39 @@ footer a:focus-visible {
         width: 90%;
         height: 4em;
         margin: 5% auto;
+        font-size: 10vw;
     }
     footer .voltar {
-        width: 20%;
+        width: 16%;
         height: auto;
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
-    body {
-        background-attachment: fixed;
-        background-position: center;
-    }
+/* Dispositivos deitados */
+@media screen and (max-width: 1200px) and (orientation: landscape)  {
     #episodio .nome {
-        margin-top: 8%;
+        margin-top: 4%;
+        font-size: 6vw;
     }
     #episodio .video {
-        padding: 46vw;
-        padding-bottom: 6%;
-        margin: 5% auto;
+        padding: 40vw;
+        padding-bottom: 5%;
+        margin: 3% auto;
     }
     #episodio .video-indisponivel {
-        width: 90%;
-        margin: 5% auto;
+        width: 70%;
+        height: 5em;
+        margin: 2% auto;
+        font-size: 6vw;
     }
     footer .voltar {
-        width: 15%;
+        width: 12%;
         height: auto;
+        margin-bottom: 1em;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    body {
-        background-attachment: fixed;
-        background-position: center;
-    }
-    #episodio .nome {
-        margin-top: 8%;
-    }
-    #episodio .video {
-        padding: 46vw;
-        padding-bottom: 6%;
-        margin: 5% auto;
-    }
-    #episodio .video-indisponivel {
-        width: 90%;
-        margin: 5% auto;
-    }
-    footer .voltar {
-        width: 15%;
-        height: auto;
-    }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-    body {
-        background-attachment: fixed;
-        background-position: center;
-    }
-    #episodio .nome {
-        margin-top: 8%;
-    }
-    #episodio .video {
-        padding: 48vw;
-        padding-bottom: 6%;
-        margin: 5% auto;
-    }
-    #episodio .video-indisponivel {
-        width: 90%;
-        margin: 5%;
-    }
-    footer .voltar {
-        width: 15%;
-        height: auto;
-    }
-}
-
-@media only screen and (min-width: 1500px) {
+@media screen and (min-width: 1500px) {
     #episodio .nome {
         margin-top: 3%;
     }
