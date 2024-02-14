@@ -64,12 +64,13 @@ body {
     background-color: var(--marrom);
     color: white;
     width: max-content;
-    padding: 3% 2%;
+    padding: 3% 4%;
 }
 #cabecalho .nav ul .ative:hover,
 #cabecalho .nav ul .ative:focus-visible {
     background-color: white;
     color: var(--marrom);
+    padding: 3% 6%;
 }
 #cabecalho .nav ul .ative:active {
     background-color: var(--marrom);
@@ -258,6 +259,12 @@ body {
     }
     #cabecalho .nav ul .ative:hover {
         padding: 3% 6.5%;
+    }
+
+    #conteudo #topo {
+        right: 4%;
+        padding: 1.5%;
+        font-size: 4em;
     }
 
     #rodape {

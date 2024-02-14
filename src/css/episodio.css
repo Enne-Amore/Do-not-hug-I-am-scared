@@ -95,7 +95,7 @@ footer a:focus-visible {
         font-size: 10vw;
     }
     footer .voltar {
-        width: 16%;
+        width: 18%;
         height: auto;
     }
 }
@@ -107,8 +107,8 @@ footer a:focus-visible {
         font-size: 6vw;
     }
     #episodio .video {
-        padding: 40vw;
-        padding-bottom: 5%;
+        padding: 36vw;
+        padding-bottom: 4.6%;
         margin: 3% auto;
     }
     #episodio .video-indisponivel {
